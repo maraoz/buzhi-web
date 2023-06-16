@@ -65,6 +65,11 @@
 
 .banner-text-image {
     padding-right: 10px;
+    @media screen and (min-width: 991px) {
+        img {
+            height: calc(100vh - 288px);
+        }
+    }
     svg {
        width: 100%; 
        max-width: 1768px;
@@ -119,7 +124,7 @@
     width: 100%;
     text-align: right;
     position: relative;
-    margin-top: 40px;
+    margin-top: 1rem;
     .plus-shape {
         position: absolute;
         left: 0;
@@ -162,13 +167,13 @@
     border-top: 1px solid var(--primary);
     padding: 30px 27px;
 
-    clip-path: polygon(calc(10% - 13px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 74px));
+    clip-path: polygon(calc(10% - 12px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 39px));
     h4 {
-        max-width: 757px;
+        max-width: 500px;
         margin-left: auto;
         text-align: right;
         font-weight: 400;
-        font-size: 50px;
+        font-size: 2rem;
         line-height: 97%;
         text-transform: uppercase;
     }
@@ -180,7 +185,7 @@
         max-width: 760px;
     }
     .investing-right-inner {
-        clip-path: polygon(calc(10% - -8px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 74px));
+        clip-path: polygon(calc(10% - -8px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 39px));
     }
 }
 @media screen and (max-width: 1199px) {
