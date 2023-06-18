@@ -25,12 +25,12 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
     li {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-right: 1px solid var(--primary);
+        border-right: 2px solid var(--primary);
         padding: 25px 0px;
         &:last-child {
             border-right: none;
@@ -82,7 +82,7 @@
         grid-template-columns: 1fr;
         li {
             border-right: none;
-            border-bottom: 1px solid var(--primary);
+            border-bottom: 2px solid var(--primary);
             padding: 15px 0px;
             &:last-child {
                 border-bottom: none;
@@ -102,6 +102,14 @@
     .footer-bottom {
         p {
             font-size: 12px;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .footer-social {
+        border: 1px solid var(--primary);
+        li {
+            border-bottom: 1px solid var(--primary);
         }
     }
 }

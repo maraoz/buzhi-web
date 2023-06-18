@@ -1,7 +1,7 @@
 
 .our-approach-area {
     margin-top: 10px;
-    border-top: 1px solid var(--primary);
+    border-top: 2px solid var(--primary);
     overflow: hidden;
     padding: 50px 0px 26px; 
     position: relative;
@@ -159,18 +159,18 @@
     max-height: 600px;
     width: 100%;
     height: 100%;
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
     padding: 13px;
     border-radius: 100%;
     position: relative;
     img {
-        animation: rotate 100s linear infinite reverse;
+        animation: breathing 10s linear infinite alternate;
     }
     &::after,
     &::before {
         position: absolute;
         content: "";
-        width: 1px;
+        width: 2px;
         height: 100%;
         background-color: var(--primary);
         left: 50%;
@@ -283,6 +283,16 @@
                 margin-top: 15px;
                 font-size: 16px;
             }
+        }
+    }
+    .our-approach-area {
+        border-top: 1px solid var(--primary);
+    }
+    .our-approach-map {
+        border: 1px solid var(--primary);
+        &::after, 
+        &::before {
+            width: 1px;
         }
     }
 }

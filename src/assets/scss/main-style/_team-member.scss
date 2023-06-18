@@ -12,7 +12,7 @@
 
 .team-wrapper-inner {
     position: relative;
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
     border-top: 0;
     padding: 50px 152px;
     clip-path: polygon(0 0, 97% 0, 100% 130px, 100% 100%, 0 100%, 0 44%);
@@ -22,9 +22,9 @@
         width: 130px;
         height: 130px;
         background-color: var(--primary);
-        top: 0;
-        right: 0;
-        clip-path: polygon(0 0, 1px 0, 100% calc(100% - 1px), 100% 100%, calc(100% - 1px) 100%, 0 1px);
+        top: -1px;
+        right: -1px;
+        clip-path: polygon(0 0, 2px 0, 100% calc(100% - 2px), 100% 100%, calc(100% - 2px) 100%, 0 2px);
     }
 }
 
@@ -189,7 +189,7 @@
         grid-gap: 30px 20px;
     }
     .team-wrapper-inner {
-        clip-path: polygon(0 0, 97% 0, 100% 50px, 100% 100%, 0 100%, 0 44%);
+        clip-path: polygon(0px 0px, 95% 0px, 100% 50px, 100% 100%, 0px 100%, 0px 44%);
         &::before {
             width: 50px;
             height: 50px;
@@ -230,6 +230,12 @@
             p {
                 font-size: 10px;
             }
+        }
+    }
+    .team-wrapper-inner {
+        border: 1px solid var(--primary);
+        &::before {
+            clip-path: polygon(0 0, 1px 0, 100% calc(100% - 1px), 100% 100%, calc(100% - 1px) 100%, 0 1px);
         }
     }
 }
