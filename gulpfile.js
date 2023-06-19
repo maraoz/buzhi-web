@@ -93,7 +93,17 @@ function watcher() {
     watch('./src/assets/video/**', videoTask)
 }
 
-
+exports.build = series(
+    templateTask,
+    styleTask,
+    cssPluginTask,
+    videoTask,
+    imageTask,
+    jsDefaultTask,
+    jsPluginsTask,
+    customJsTask,
+    custonFonts
+)
 
 exports.default = series(
     templateTask,

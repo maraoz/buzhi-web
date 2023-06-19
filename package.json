@@ -10,7 +10,7 @@
         "sass": "node-sass src/scss/style.scss dist/assets/css/style.css --output-style=expanded --source-map-root file://${PWD}/ --source-map-embed true",
         "sass-watch": "node-sass -w src/scss/style.scss dist/assets/css/style.css --output-style=expanded --source-map-root file://${PWD}/ --source-map-embed true",
         "start": "concurrently \"npm run watch\" \"npm run sass-watch\" \"npm run serve\" --names \"🍺,💄,🌐\" --prefix name",
-        "build": "concurrently \"npm run gulp\" \"npm run sass\" --names \"🍺,💄\" --prefix name"
+        "build": "gulp build"
     },
     "author": "Enamul Haque",
     "license": "ISC",
