@@ -15,16 +15,16 @@
 }
 .blog-wrap {
     position: relative;
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
     clip-path: polygon(0 0, calc(100% - 130px) 0, 100% 130px, 100% 100%, 130px 100%, 0 100%);
     &::before {
         position: absolute;
         content: "";
         width: 130px;
         height: 130px;
-        clip-path: polygon(100% 100%, 100% calc(100% - 2px), 2px 0, 0 0);
+        clip-path: polygon(100% 100%, 100% calc(100% - 3px), 3px 0, 0 0);
         background-color: var(--primary);
-        top: 0px;
+        top: -1px;
         right: 0px;
     }
     &::after {
@@ -42,7 +42,7 @@
 .blog-top {
     padding: 30px;
     position: relative;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
     .explore {
         position: absolute;
         bottom: -1px;
@@ -160,6 +160,17 @@
     max-width: 910px;
     margin: 0 auto;
     padding: 0px 30px;
+    position: relative;
+    &::after {
+        width: 16px;
+        height: 16px;
+        background-color: var(--primary);
+        position: absolute;
+        content: "";
+        bottom: 0px;
+        right: 0;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
 }
 .blog-exp-inner {
     padding: 28px 0px 40px;
@@ -171,9 +182,11 @@
 .blog-exp-thumb {
     max-width: 192px;
     width: 100%;
+    margin-left: -45px;
     img {
         width: 100%;
-        animation: rotate 10s linear infinite;
+        animation: breathing 5s linear infinite;
+
     }
 }
 .blog-exp-content {
@@ -183,7 +196,7 @@
     &::before {
         position: absolute;
         content: "";
-        width: 1px;
+        width: 2px;
         height: calc(100% + 68px);
         top: -28px;
         background-color: var(--primary);
@@ -202,6 +215,11 @@
 }
 
 // Responsive 
+@media screen and (max-width: 1100px) {
+    .blog-exp-thumb {
+        margin-left: 0px;
+    }
+}
 @media screen and (max-width: 991px) {
     .blog-exp-content {
         max-width: 430px;
@@ -248,7 +266,7 @@
 // Banner 
 .blog-banner {
     padding: 10px;
-    border-top: 1px solid var(--primary);
+    border-top: 2px solid var(--primary);
     img {
         width: 100%;
     }
@@ -326,5 +344,15 @@
         h4 {
             font-size: 17px;
         }
+    }
+
+    .blog-wrap {
+        border: 1px solid var(--primary);
+    }
+    .blog-top {
+        border-bottom: 1px solid var(--primary);
+    }
+    .blog-banner {
+        border-top: 1px solid var(--primary);
     }
 }

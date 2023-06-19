@@ -24,6 +24,16 @@
         top: -50px;
         animation: cliLeftRight 1s linear infinite alternate;
     }
+    &::after {
+        width: 16px;
+        height: 16px;
+        background-color: var(--primary);
+        position: absolute;
+        content: "";
+        bottom: 0px;
+        left: 0;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
 }
 .get-in-touch-wrap {
     border: 2px solid var(--primary);
@@ -79,7 +89,7 @@
     position: relative;
     margin-top: 30px;
     display: inline-block;
-    padding: 0px 10px;
+    padding: 0px 10px 12px;
     span {
         position: absolute;
         content: "";
@@ -185,6 +195,7 @@
         font-size: 8vw;
     }
     .get-in-touch-mail-wrap {
+        padding: 10px 10px;
         span {
             width: 10px;
         }
@@ -192,10 +203,7 @@
             clip-path: polygon(100% 10px, 0 10px, 0 0, 16% 0, 88% 0, 100% 0, 100% 100%, 78% 100%, 4% 100%, 0 100%, 0 calc(100% - 10px), 41% 91%);
         }
         .get-in-tuch-right-shape {
-            right: 0;
-            border-right: 2px solid var(--primary);
-            border-radius: 0px 8px 8px 0px;
-            clip-path: polygon(100% 0, 100% 10px, 84% 15px, 77% calc(100% - 10px), 100% calc(100% - 10px), 114% 100%, 0 100%, 0 0);
+            clip-path: polygon(100% 0, 100% 10px, -88% 10px, 0 calc(100% - 10px), 100% calc(100% - 10px), 100% 100%, 0 100%, 0 0);
         }
     }
     .get-in-touch-wrapper .shape {

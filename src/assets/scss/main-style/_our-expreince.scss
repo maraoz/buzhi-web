@@ -94,14 +94,16 @@
         align-items: center;
         gap: 18px 11px;
         flex-wrap: wrap;
-        a {
+        li {
             display: flex;
             align-items: center;
             gap: 11px;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 110%;
-            color: #FFBA08;
+            a {
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 110%;
+                color: #FFBA08;
+            }
             svg {
                 width: 23px;
                 height: 30px;
@@ -182,6 +184,7 @@
     }
     .experince-content {
         padding: 20px;
+        padding-right: 40px;
         .title {
             gap: 10px;
             img {
@@ -197,10 +200,12 @@
         }
         .content {
             margin-top: 30px;
-            a {
+            li {
                 gap: 10px;
-                font-size: 16px;
-                 svg {
+                a {
+                    font-size: 16px;
+                }
+                svg {
                     width: 14px;
                     height: auto;
                 }

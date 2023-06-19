@@ -181,6 +181,7 @@
     }
     .single-journal {
         border: 1px solid var(--primary);
+        border-top: none;
         &::before {
             height: 1px;
         }
