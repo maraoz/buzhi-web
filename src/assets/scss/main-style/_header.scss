@@ -1,7 +1,7 @@
 
 .header-area {
     padding: 8px 0px;
-    // border-bottom: 4px solid var(--primary);
+    border-bottom: 4px solid var(--primary);
 }
 
 .header-wrapper {
@@ -123,14 +123,15 @@
 @media screen and (max-width: 767px) {
     .header-area {
         position: relative;
+        border-width: 2px;
     }
     .main-menu {
         position: absolute;
         content: "";
         width: 100vw;
-        height: calc(100vh - 103px);
+        height: calc(100vh - 91px);
         left: 0;
-        top: 103px;
+        top: 91px;
         z-index: 999;
         padding: 10px;
         padding-top: 0;
@@ -252,7 +253,7 @@
             left: -20px;
         }
         > img {
-            max-width: 300px;
+            max-width: 450px;
             width: 100%;
             transform: translateY(50px);
             opacity: 0;
@@ -282,5 +283,10 @@
     }
     .menu-body {
         overflow: hidden !important;
+        position: relative;
+        z-index: 1;
+        .body-overlay {
+            opacity: 0;
+        }
     }
 }

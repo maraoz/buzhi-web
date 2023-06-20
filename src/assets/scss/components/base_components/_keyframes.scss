@@ -139,3 +139,21 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
+
+
+.dotAnimaton {
+    animation: dotAnimaton 5s infinite;
+    animation-delay: calc(.10s * var(--i));
+}
+
+@keyframes dotAnimaton {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
