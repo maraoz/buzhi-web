@@ -70,10 +70,12 @@
         img {
             height: calc(100vh - 288px);
         }
+        svg {
+            width: calc((100vh - 288px)*2.38); 
+        }
     }
     svg {
-       width: calc((100vh - 288px)*2.38); 
-       max-width: 1768px;
+       max-width: 100%;
        max-height: 100%;
        margin-top: 15px;
        &:last-child {
