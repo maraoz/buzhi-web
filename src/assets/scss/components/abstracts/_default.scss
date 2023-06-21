@@ -217,6 +217,7 @@ body {
     height: 100%;
     z-index: 1000;
     opacity: 27%;
+    pointer-events: none;
     mix-blend-mode: hard-light;
 }
 .blog-home {
