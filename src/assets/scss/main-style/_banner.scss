@@ -106,6 +106,27 @@
     justify-content: flex-end;
     gap: 5px;
     position: relative;
+    .dots-group-shape {
+        // bottom: 10px;
+        // min-width: 200px;
+        display: flex;
+        align-items: flex-end;
+        padding: 0.5rem;
+        svg {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: var(--primary);
+        bottom: -1px;
+        right: 0;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
 }
 
 .investing-left {
@@ -124,6 +145,7 @@
         transform: rotate(-90deg) translateX(37px);
     }
 }
+
 
 .investing-right {
     max-width: 974px;
@@ -146,25 +168,6 @@
         top: 0;
         left: 0;
         clip-path: polygon(calc(100% - 2px) 0, 100% 1%, 1% 100%, 0 calc(100% - 2px));
-    }
-    .dots-group-shape {
-        position: absolute;
-        bottom: 10px;
-        left: -14%;
-        svg {
-            max-width: 100%;
-            max-height: 100%;
-        }
-    }
-    &::before {
-        position: absolute;
-        content: "";
-        width: 16px;
-        height: 16px;
-        background-color: var(--primary);
-        bottom: -1px;
-        right: 0;
-        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     }
 }
 .investing-right-inner {
