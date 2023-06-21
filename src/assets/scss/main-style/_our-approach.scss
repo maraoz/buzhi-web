@@ -104,14 +104,6 @@
                 right: 0;
                 clip-path: polygon(100% 0, 0% 100%, 100% 100%);
             }
-            > img {
-                animation: rotate 10s linear infinite;
-            }
-        }
-        &.single-approach-item-01-image {
-            img {
-                animation: none !important;
-            }
         }
     }
     .content {
