@@ -155,6 +155,7 @@
     border-radius: 100%;
     position: relative;
     img {
+        border-radius: 1000px;
         animation: breathing 20s linear infinite alternate;
     }
     &::after,
