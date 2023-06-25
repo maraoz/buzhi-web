@@ -1,51 +1,26 @@
 
 (function($) {
     var allfunction = {
-
-
         //=============== Menu ==============
-        menu_toggle: function() {
-            $('.hamburger').on('click', function() {
-                $(this).toggleClass('opened')
-                $('.main-menu').toggleClass('mobile-menu-active')
-                $("body").toggleClass('menu-body')
-            });
+        toggleMenu: function() {
+            $(this).toggleClass('opened')
+            $('.main-menu').toggleClass('mobile-menu-active')
+            $("body").toggleClass('menu-body')
         },
-
-        
-
+        menu_toggle_setup: function() {
+            $('.hamburger').on('click', this.toggleMenu);
+            $('.nav li a').on('click', this.toggleMenu);
+        },
         init: function() {
-            allfunction.menu_toggle()
+            allfunction.menu_toggle_setup()
         },
     }
 
     $(document).ready(function() {
         allfunction.init();
-        // window.addEventListener('load',function(){
-        //     document.querySelector('body').classList.add("loaded")  
-        // });
     });
     
 })(jQuery);
-
-// Mouse Move
-// document.addEventListener("mousemove", parallax);
-// function parallax(e) {
-//     document.querySelectorAll(".anemiXY").forEach(function(move){
-
-//         var moving_value = move.getAttribute("data-value");
-
-//         var x = (e.clientX * moving_value) / 300;
-//         var y = (e.clientY * moving_value) / 300;
-
-//         move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-//     })
-// }
-
-
-
-// Animi js All code here
-
 
 anime({
     targets: '.banner-text-underline path',
@@ -75,8 +50,3 @@ anime({
     direction: 'alternate',
     loop: true
 });
-
-// Nice Scroll
-// $(document).ready(function() {
-//     $("html").niceScroll({cursorwidth: '5px', autohidemode: false, zindex: 999 });
-// });
