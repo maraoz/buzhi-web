@@ -190,8 +190,9 @@ body {
     line-height: 1.3;
     font-weight: 400;
     font-size: 16px;
-    position: relative;
-
+    // position: relative;
+    
+    background-image: url('/assets/img/body-bg.jpg');
     background-size: cover;
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -210,7 +211,7 @@ body {
 .body-overlay {
     background-image: url("/assets/img/overlay.jpg");
     background-repeat: repeat;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
