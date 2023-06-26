@@ -104,11 +104,11 @@
 .investing-wrapper {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
     gap: 5px;
     position: relative;
     .dots-group-shape {
-        // bottom: 10px;
-        // min-width: 200px;
+        max-width: 110px;
         display: flex;
         align-items: flex-end;
         padding: 0.5rem;
@@ -196,13 +196,6 @@
         clip-path: polygon(calc(10% - -8px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 39px));
     }
 }
-@media screen and (max-width: 1199px) {
-    .investing-right {
-        .dots-group-shape {
-            display: none;
-        }
-    }
-}
 @media screen and (max-width: 991px) {
     .investing-right-inner h4 {
         max-width: 450px;
@@ -236,10 +229,10 @@
         }
     }
     .investing-right-inner {
-        clip-path: polygon(calc(10% + 23px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 85px));
+        clip-path: polygon(calc(10% + 23px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 80px));
         h4 {
             max-width: 207px;
-            font-size: 22px;
+            font-size: 20px;
             line-height: 1.1;
         }
     }
@@ -256,14 +249,23 @@
     }
     .investing-right {
         max-width: 250px;
-        // margin-left: 40px;
     }
     .investing-right-inner {
         padding: 20px;
-        clip-path: polygon(calc(10% - -24px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 64px));
+        clip-path: polygon(calc(10% - -24px) 0, 100% 0, 100% 100%, 0 100%, 0 calc(100% - 58px));
+        h4 {
+            font-size: 20px;
+        }
+    }
+    .investing-wrapper {
+        .dots-group-shape {
+            display: none;
+        }
     }
     .banner-inner {
-        padding: 10px 10px;
+        padding: 10px 12px;
+        padding-bottom: 0;
+        padding-right: 0;
     }
     .investing-left {
         left: -12px;
