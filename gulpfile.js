@@ -12,7 +12,7 @@ const sass = require('gulp-sass')(require('sass'));
 
 // Template engine twig
 function templateTask() {
-    return src('./src/*.twig')
+    return src('./src/**/*.twig')
         .pipe(twig()).pipe(dest('dist'))
 }
 
