@@ -1,0 +1,66 @@
+---
+import BannerTextUnderline from '../svg/BannerTextUnderline.astro';
+import UnderlineForMobile from '../svg/UnderlineForMobile.astro';
+import DotsGroupShape from '../svg/DotsGroupShape.astro';
+import DiscoverLight from '../svg/DiscoverLight.astro';
+---
+
+<section class="banner-area">
+    <div class="container">
+        <div class="banner-wrapper">
+            <!-- shapes Start -->
+            <img class="banner-bg-shape" src="/assets/img/bg-shape.png" alt="shape">
+            <img class="banner-star-shape" src="/assets/img/shape/star-shape.svg" alt="shape">
+            <img class="banner-cercle-shape" src="/assets/img/shape/cercle-border-shape.svg" alt="shape">
+            <span class="border-top-angle"></span>
+            <span class="border-bottom-angle"></span>
+            <!-- shapes End -->
+            <div class="banner-inner">
+            <div class="above-fold"> 
+                <div class="banner-text-image">
+                    <img src="/assets//img/banner-text.svg" alt="banner-text">
+                    <BannerTextUnderline />
+                    <UnderlineForMobile />
+                </div>
+                <!-- Investing Section Start -->
+                <div class="investing-wrapper">
+                    <div class="investing-left">
+                        <h6>scroll to <br>explore</h6>
+                        <img src="/assets/img/shape/investing-shape-01.svg" alt="investing">
+                    </div>
+                    <div class="dots-group-shape">
+                        <DotsGroupShape />
+                    </div>
+                    <div class="investing-right">
+                        <img class="plus-shape" src="/assets/img/shape/plus.svg" alt="shape">
+                        <span class="investing-angle"></span>
+                        <div class="investing-right-inner">
+                            <h4>investing in early stage
+                                tech explorations</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+                <!-- Investing Section End -->
+                <!-- Discover Section Start -->
+                <div class="discover-wrapper">
+                    <img src="/assets/img/shape/investing-shape-02.svg" alt="shape">
+                    <div class="discover-left">
+                        <h4>Discovering <br>
+                            <span>the Unknown</span></h4>
+                        <p>
+                            <span></span> We believe that the most groundbreaking technological innovations emerge at the fringes. That's why we support <strong>global founders</strong> who dare to <strong>experiment with technology</strong>, even when there's no clear use case for their creations.
+                            <br>
+                            <br>
+                            <span></span>不知 <i>means 'unknown' in Chinese. Buzhi represents our commitment to backing the unexplored.</i>
+                        </p>
+                    </div>
+                    <div class="discover-right">
+                        <DiscoverLight />
+                    </div>
+                </div>
+                <!-- Discover Section End -->
+            </div>
+        </div>
+    </div>
+</section>

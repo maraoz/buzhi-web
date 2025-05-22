@@ -1,0 +1,44 @@
+---
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "buzhi - investing in early stage tech explorations" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title || "不知 BUZHI"}</title>
+		
+		<!-- Fonts -->
+		<link rel="stylesheet" href="/assets/fonts/stylesheet.css">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="/assets/libs/bootstrap-5.css">
+		
+		<!-- Main Styles -->
+		<link rel="stylesheet" href="/assets/css/style.css">
+
+		<!-- Analytics -->
+		<script defer data-domain="buzhi.io" src="https://plausible.io/js/script.js"></script>
+	</head>
+	<body>
+		<slot />
+		
+		<!-- Scripts -->
+		<script src="/assets/js/default/1-jquery-3.3.1.min.js"></script>
+		<script src="/assets/js/default/2-jquery-migrate.min.js"></script>
+		<script src="/assets/js/default/popper.js"></script>
+		<script src="/assets/js/default/bootstrap5.min.js"></script>
+		<script src="/assets/js/plugin/anime.min.js"></script>
+		<script src="/assets/js/plugin/niceScroll.min.js"></script>
+		<script src="/assets/js/scripts.js"></script>
+	</body>
+</html>

@@ -10,7 +10,10 @@
         "sass": "node-sass src/scss/style.scss dist/assets/css/style.css --output-style=expanded --source-map-root file://${PWD}/ --source-map-embed true",
         "sass-watch": "node-sass -w src/scss/style.scss dist/assets/css/style.css --output-style=expanded --source-map-root file://${PWD}/ --source-map-embed true",
         "start": "concurrently \"npm run watch\" \"npm run sass-watch\" \"npm run serve\" --names \"🍺,💄,🌐\" --prefix name",
-        "build": "gulp build"
+        "build": "gulp build",
+        "astro:dev": "astro dev --root astro-src",
+        "astro:build": "astro build --root astro-src",
+        "astro:preview": "astro preview --root astro-src"
     },
     "author": "Enamul Haque",
     "license": "ISC",
@@ -36,6 +39,9 @@
         "gulp-twig": "^1.2.0",
         "gulp-uglify": "^3.0.2",
         "live-server": "^1.2.2",
-        "sass": "^1.62.1"
+        "sass": "^1.62.1",
+        "astro": "^4.0.0",
+        "@astrojs/mdx": "^2.0.0",
+        "@astrojs/sitemap": "^3.0.0"
     }
 }
