@@ -1,0 +1,7 @@
+// Astro SCSS Entry Point
+// This imports the existing SCSS structure during migration
+
+// Import existing styles (will need path adjustments)
+@import "../../src/assets/scss/style.scss";
+
+// Additional Astro-specific styles can be added here

@@ -1,0 +1,31 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+  class?: string;
+}
+
+const { title = '不知 BUZHI', description = 'Investing in early stage tech explorations', class: bodyClass = '' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="icon" href="/img/favicon.png" type="image/gif" sizes="16x16">
+  
+  <!-- CSS Files - These will need to be updated during migration -->
+  <link rel="stylesheet" type="text/css" href="/css/plugins.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
+  
+  <!-- Analytics -->
+  <script defer data-domain="buzhi.io" src="https://plausible.io/js/script.js"></script>
+</head>
+<body class={bodyClass}>
+  <slot />
+</body>
+</html>

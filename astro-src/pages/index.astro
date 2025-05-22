@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="不知 BUZHI" description="Investing in early stage tech explorations">
+  <Header />
+  
+  <main>
+    <!-- Banner Area Start -->
+    <section class="banner-area">
+      <div class="container">
+        <div class="banner-wrapper">
+          <!-- shapes Start -->
+          <img class="banner-bg-shape" src="/img/bg-shape.png" alt="shape">
+          <img class="banner-star-shape" src="/img/shape/star-shape.svg" alt="shape">
+          <img class="banner-cercle-shape" src="/img/shape/cercle-border-shape.svg" alt="shape">
+          <span class="border-top-angle"></span>
+          <span class="border-bottom-angle"></span>
+          <!-- shapes End -->
+          <div class="banner-inner">
+            <div class="above-fold"> 
+              <div class="banner-text-image">
+                <img src="/img/banner-text.svg" alt="banner-text">
+                <!-- SVG components will be converted in later phases -->
+              </div>
+              <!-- Investing Section Start -->
+              <div class="investing-wrapper">
+                <div class="investing-left">
+                  <h6>scroll to <br>explore</h6>
+                  <img src="/img/shape/investing-shape-01.svg" alt="investing">
+                </div>
+                <div class="dots-group-shape">
+                  <!-- SVG component placeholder -->
+                </div>
+                <div class="investing-right">
+                  <img class="plus-shape" src="/img/shape/plus.svg" alt="shape">
+                  <span class="investing-angle"></span>
+                  <div class="investing-right-inner">
+                    <h4>investing in early stage
+                      tech explorations</h4>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <!-- Investing Section End -->
+            <!-- Discover Section Start -->
+            <div class="discover-wrapper">
+              <img src="/img/shape/investing-shape-02.svg" alt="shape">
+              <div class="discover-left">
+                <h4>Discovering <br>
+                  <span>the Unknown</span></h4>
+                <p>
+                  <span></span> We believe that the most groundbreaking technological innovations emerge at the fringes. That's why we support <strong>global founders</strong> who dare to <strong>experiment with technology</strong>, even when there's no clear use case for their creations.
+                  <br>
+                  <br>
+                  <span></span>不知 <i>means 'unknown' in Chinese. Buzhi represents our commitment to backing the unexplored.</i>
+                </p>
+              </div>
+              <div class="discover-right">
+                <!-- SVG component placeholder -->
+              </div>
+            </div>
+            <!-- Discover Section End -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner Area End -->
+
+    <!-- Placeholder for remaining sections -->
+    <section style="padding: 4rem 0; text-align: center; background: #f5f5f5;">
+      <div class="container">
+        <h2>🚧 Astro Migration in Progress</h2>
+        <p>This is a basic Astro setup. Additional sections will be migrated in subsequent phases.</p>
+        <ul style="list-style: none; padding: 0;">
+          <li>✅ Basic layout and components</li>
+          <li>⏳ Our Approach section</li>
+          <li>⏳ Our Experience section</li>
+          <li>⏳ Get in Touch section</li>
+          <li>⏳ Journal section</li>
+          <li>⏳ Team section</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+  
+  <!-- Footer Scripts - These will need to be updated -->
+  <script src="/js/diffault.min.js"></script>
+  <script src="/js/app.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</Layout>
