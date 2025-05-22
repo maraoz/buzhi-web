@@ -54,6 +54,12 @@
     border: 2px solid var(--primary);
     border-top: none;
     position: relative;
+    clip-path: polygon(0 0, 97% 0, 100% 54px, 100% 100%, 0 100%, 0 44%);
+    .journal-title {
+        h4 {
+            max-width: 395px;
+        }
+    }
     .cornar-shape {
         position: absolute;
         content: "";
@@ -83,17 +89,6 @@
         top: 0;
         background-color: var(--primary);
         clip-path: polygon(0 0, 2px 0, 100% calc(100% - 4px), 100% 100%, calc(100% - 0px) 100%, 0 2px);
-    }
-    &:first-child {
-        // border-right: none;
-    }
-    &:last-child {
-        clip-path: polygon(0 0, 97% 0, 100% 54px, 100% 100%, 0 100%, 0 44%);
-        .journal-title {
-            h4 {
-                max-width: 395px;
-            }
-        }
     }
 
     .journal-title {
